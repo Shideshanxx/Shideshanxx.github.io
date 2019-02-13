@@ -3,7 +3,7 @@ title: SDS
 SEOTitle: Deshan Shi's Blog
 author: Deshan Shi
 timezone: Asia/Wuhan
-paginate: 10 # pagination based on number of posts
+paginate: 6 # pagination based on number of posts
 paginate_path: "page:num"
 highlighter: rouge
 markdown: kramdown
@@ -41,11 +41,11 @@ BASE_PATH:
 # SNS settings
 
 # weibo_username:     brucezhaor
-# facebook_username:     BruceZhaoR
+facebook_username:     石德山
 github_username:    shideshanxx
-google_username:  101167914127123982138/posts
-RSS: feed.xml
-email: 3070428732@qq.com
+# google_username:  101167914127123982138/posts
+# RSS: feed.xml
+email: 307042873@qq.com
 linkedin: brucezhaor
 
 anchorjs: true                          # 修改在default.html->footer
@@ -66,7 +66,7 @@ sidebar-avatar: /img/me2.jpg     # img前面加`/`绝对引用。
 # Friends
 friends: [
 	{
-        title: "Blog",
+        title: "myBlog",
         href: "http://shideshan.top"
     },{
         title: "Apple",
