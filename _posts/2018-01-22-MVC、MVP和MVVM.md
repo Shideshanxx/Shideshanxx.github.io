@@ -6,7 +6,7 @@ date:       2018-1-22
 author:     "Deshan Shi"
 tags:       [前端]
 categories : [前端]
-header-img: "/img/post/markdown.jpg"
+header-img: "/img/post/post-bg-re-vs-ng2.jpg"
 description: "MVC、MVP及MVVM三者之间的关系"
 ---
 
