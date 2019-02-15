@@ -25,6 +25,7 @@ header-img: "/img/home-bg.jpg"
 		{% endif %}
     </a>
     <p class="post-meta">
+        <!-- 这里浏览量显示有问题，未解决 -->
         Posted on {{ post.date | date: "%B %-d, %Y" }};&nbsp;浏览量:&nbsp;<span data-hk-page="{{ post.url | prepend: site.url }}"> - </span>次.
     </p>
 </div>

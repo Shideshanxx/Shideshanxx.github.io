@@ -40,13 +40,13 @@ BASE_PATH:
 
 # SNS settings
 
-# weibo_username:     brucezhaor
-facebook_username:     石德山
+weibo_username:     zjut石德山
+# facebook_username:     石德山
 github_username:    shideshanxx
 # google_username:  101167914127123982138/posts
 # RSS: feed.xml
 email: 307042873@qq.com
-linkedin: brucezhaor
+# linkedin: brucezhaor
 
 anchorjs: true                          # 修改在default.html->footer
 
@@ -66,13 +66,11 @@ sidebar-avatar: /img/me2.jpg     # img前面加`/`绝对引用。
 # Friends
 friends: [
 	{
-        title: "myBlog",
-        href: "http://shideshan.top"
+        title: "掘金",
+        href: "https://juejin.im/timeline"
     },{
-        title: "Apple",
-        href: "https://apple.com"
+        title: "SegmentFault",
+        href: "https://segmentfault.com/"
     }
 ]
-
-
 

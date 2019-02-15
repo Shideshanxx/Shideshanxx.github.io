@@ -4,7 +4,7 @@ title:      "MVC、MVP及MVVM"
 subtitle:   "关于这三种模式的简单认识"
 date:       2018-1-22
 author:     "Deshan Shi"
-tags:       [前端]
+tags:       [框架]
 categories : [前端]
 header-img: "/img/post/post-bg-re-vs-ng2.jpg"
 description: "MVC、MVP及MVVM三者之间的关系"
