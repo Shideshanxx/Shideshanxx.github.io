@@ -24,10 +24,10 @@ header-img: "/img/home-bg.jpg"
         </div>
 		{% endif %}
     </a>
-    <!-- <p class="post-meta">
-        这里浏览量显示有问题，未解决，暂时去掉这个功能
-        Posted on {{ post.date | date: "%B %-d, %Y" }};&nbsp;浏览量:&nbsp;<span data-hk-page="{{ post.url | prepend: site.url }}"> - </span>次.
-    </p> -->
+    <p class="post-meta">
+        Posted on {{ post.date | date: "%B %-d, %Y" }};
+        <!-- &nbsp;浏览量:&nbsp;<span data-hk-page="{{ post.url | prepend: site.url }}"> - </span>次. -->
+    </p>
 </div>
 <hr>
 {% endfor %}

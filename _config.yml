@@ -1,5 +1,5 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-title: SDS
+title: SDS Blog
 SEOTitle: Deshan Shi's Blog
 author: Deshan Shi
 timezone: Asia/Wuhan
@@ -40,12 +40,14 @@ BASE_PATH:
 
 # SNS settings
 
-weibo_username:     zjut石德山
+weibo_username:     sdspro
+zhihu_username:     sdspro
 # facebook_username:     石德山
+twitter_username:   shideshanpro
 github_username:    shideshanxx
 # google_username:  101167914127123982138/posts
 # RSS: feed.xml
-email: 307042873@qq.com
+# email: 307042873@qq.com
 # linkedin: brucezhaor
 
 anchorjs: true                          # 修改在default.html->footer
@@ -71,6 +73,9 @@ friends: [
     },{
         title: "SegmentFault",
         href: "https://segmentfault.com/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
     }
 ]
 
