@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<!--//添加评论系统-->
-<link rel="stylesheet" href="../../../../assets/css/gitalk.css">
-    <script src="../../../../assets/js/gitalk.min.js"></script>
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
@@ -163,13 +160,6 @@ layout: default
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
 
-                <!--   gitalk       -->
-                {% if site.gitalk %}
-                <div class="comment">
-                    {% include comments.html %}
-                </div>
-                {% endif %}
-
             </div>
 		<!-- Sidebar Container -->
             <div class="
@@ -192,6 +182,20 @@ layout: default
             </div>
         </div>
     </div>
+    <div id="gitmentContainer"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+        owner: 'Shideshanxx',
+        repo: '{{site.comment_gitment_repo}}',
+        oauth: {
+            client_id: '{{site.comment_gitment_clientId}}',
+            client_secret: '{{site.comment_gitment_clientSecret}}',
+        },
+    });
+    gitment.render('gitmentContainer');
+    </script>
 </article>
 
 {% if site.netease_comment %}
