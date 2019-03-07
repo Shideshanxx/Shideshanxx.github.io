@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!--//添加评论系统-->
+<link rel="stylesheet" href="../../../../assets/css/gitalk.css">
+    <script src="../../../../assets/js/gitalk.min.js"></script>
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
@@ -126,33 +129,45 @@ layout: default
                     {% endif %}
                 </ul>
 
-                {% if site.duoshuo_username %}
-                <!-- 多说评论框 start -->
-		<div id="SOHUCS" sid="{{page.id}}" ></div>
-			
-		<a href="#SOHUCS" id="changyan_count_unit"></a>//评论数
-		<a href="#SOHUCS" id="changyan_parti_unit"></a>//参与数
-		<script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js">
-		</script>
-		<!-- 注释多说评论
-		<div class="comment">
-                    <div class="ds-thread"
-                        data-thread-key="{{page.id}}"
-                        data-title="{{page.title}}"
-                        data-url="{{site.url}}{{site.BASE_PATH}}{{page.url}}" >
-                    </div>
-
-                </div>
-	        --->
-                <!-- 多说评论框 end -->
-                {% endif %}
-				
-                {% if site.disqus %}
+<!--                {% if site.disqus_username %}-->
                 <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
+<!--                <div class="comment">-->
+<!--                    <div id="disqus_thread" class="disqus-thread"></div>-->
+<!--                </div>-->
                 <!-- disqus 评论框 end -->
+<!--                {% endif %}-->
+
+<!--                <div id="disqus_thread"></div>-->
+<!--                <script>-->
+<!--                    -->
+<!--                    /**-->
+<!--                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.-->
+<!--                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/-->
+<!--                 var disqus_config = function () {-->
+<!--                 this.page.url = site.page.url;  // Replace PAGE_URL with your page's canonical URL variable-->
+<!--                 this.page.identifier = site.page.identifier; // Replace PAGE_IDENTIFIER with your page's unique identifier variable-->
+<!--                 };-->
+<!--                 -->
+<!--                (function() { // DON'T EDIT BELOW THIS LINE-->
+<!--                 var d = document, s = d.createElement('script');-->
+<!--                 s.src = 'https://yizibi.disqus.com/embed.js';-->
+<!--                 s.setAttribute('data-timestamp', +new Date());-->
+<!--                 (d.head || d.body).appendChild(s);-->
+<!--                 })();-->
+<!--                    </script>-->
+<!--                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
+
+                {% if site.netease_comment %}
+                <!-- 网易云跟帖 评论框 start -->
+                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                <!-- 网易云跟帖 评论框 end -->
+                {% endif %}
+
+                <!--   gitalk       -->
+                {% if site.gitalk %}
+                <div class="comment">
+                    {% include comments.html %}
+                </div>
                 {% endif %}
 
             </div>
@@ -173,30 +188,36 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
+
             </div>
         </div>
     </div>
 </article>
 
-{% if site.duoshuo_username %}
-<!-- 畅言JS代码start-->
-<script type="text/javascript"> 
-(function(){ 
-var appid = 'cyt4EmGx1'; 
-var conf = 'prod_95359b2bdca543237b07790b1e9bc9df'; 
-var width = window.innerWidth || document.documentElement.clientWidth; 
-if (width < 960) { 
-window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
-<!-- 畅言公共JS代码 end -->
+{% if site.netease_comment %}
+<!-- 网易云跟帖JS代码 start -->
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "de25fc98a6fe48b3bc8a7ae765da99a0",
+    target: "cloud-tie-wrapper"
+  };
+  var yunManualLoad = true;
+  Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+<!-- 网易云跟帖JS代码 end -->
 {% endif %}
 
-{% if site.disqus %}
+{% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus}}";
+    var disqus_shortname = "{{site.disqus_username}}";
     var disqus_identifier = "{{page.id}}";
-    var disqus_url = "{{site.BASE_PATH}}{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

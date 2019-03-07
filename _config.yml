@@ -54,11 +54,20 @@ anchorjs: true                          # 修改在default.html->footer
 
 
 # 评论系统
-# Duoshuo settings
-duoshuo_username: brucezhaor
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-url: "http://brucezhaor.github.io" 
+# Comment
+#comment:
+  #disqus: Shideshanxx
+# Netease settings
+netease_comment: false
+
+gitalk:
+   enable: true
+   owner: Shideshanxx
+   repo: shideshanxx.github.io
+   clientID: 5ae27258c9b24dd664be
+   clientSecret: 30208b22f48457523d185ad61235164a308d1e5e
+   admin: Shideshanxx
+
 
 # page Sidebar settings
 sidebar-about-description: "A future technique geek."
