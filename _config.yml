@@ -57,10 +57,10 @@ anchorjs: true                          # 修改在default.html->footer
 # comments:
 #   disqus: false
 
-#giment
-# comment_gitment_repo: shideshanxx.github.io
-# comment_gitment_clientId: 5ae27258c9b24dd664be
-# comment_gitment_clientSecret: 30208b22f48457523d185ad61235164a308d1e5e
+giment
+comment_gitment_repo: shideshanxx.github.io
+comment_gitment_clientId: 5ae27258c9b24dd664be
+comment_gitment_clientSecret: 30208b22f48457523d185ad61235164a308d1e5e
 
 
 # page Sidebar settings
