@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "《你不知道的javascript（上卷）》读书笔记"
+title:      "JS——《你不知道的javascript（上卷）》读书笔记"
 subtitle:   "精读《你不知道的 javascript（上卷）》"
 date:       2018-02-26
 author:     "Deshan Shi"
