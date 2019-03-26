@@ -8,6 +8,10 @@ layout: default
         background-image: {% if page.header-img %} url('{{ site.BASE_PATH }}{{ page.header-img }}'){% endif %}{% if page.bg-color %} {{ page.bg-color }}{% endif %}
     }
 </style>
+<!--//添加评论系统-->
+<link rel="stylesheet" href="../../../../assets/css/gitalk.css">
+    <script src="../../../../assets/js/gitalk.min.js"></script>
+
 
 <header class="intro-header" >
     <div class="container">
@@ -181,7 +185,9 @@ layout: default
 
             </div>
         </div>
-        <div id="gitmentContainer"></div>
+
+        <!-- 第一个版本的gitment，bug：每个页面的评论相同 -->
+        <!-- <div id="gitmentContainer"></div>
         <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
         <script src="https://www.wenjunjiang.win/js/gitment.js"></script>
         <script>
@@ -195,7 +201,7 @@ layout: default
             },
         });
         gitment.render('gitmentContainer');
-        </script>
+        </script> -->
 
     </div>
     

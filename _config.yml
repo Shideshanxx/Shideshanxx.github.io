@@ -1,5 +1,5 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-title: SDS Blog
+title: 石德山
 SEOTitle: Deshan Shi's Blog
 author: Deshan Shi
 timezone: Asia/Wuhan
@@ -15,13 +15,6 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
 
-# 国内用多说
-# disqus: brucezhaor
-
-#Google Analytics https://developers.google.com/analytics/devguides/collection/analyticsjs/
-#去_layout/default.html的头文件中去设置.
-#google_analytics_id: UA-72808482-1
-#google_analytics_domain: auto
 
 # 自定义永久链接
 permalink: /blog/:year/:month/:day/:title/
@@ -58,10 +51,17 @@ anchorjs: true                          # 修改在default.html->footer
 #   disqus: false
 
 #gitment
-comment_gitment_repo: shideshanxx.github.io
-comment_gitment_clientId: 5ae27258c9b24dd664be
-comment_gitment_clientSecret: 30208b22f48457523d185ad61235164a308d1e5e
+# comment_gitment_repo: shideshanxx.github.io
+# comment_gitment_clientId: 5ae27258c9b24dd664be
+# comment_gitment_clientSecret: 30208b22f48457523d185ad61235164a308d1e5e
 
+gitalk:
+   enable: true
+   owner: Shideshanxx
+   repo: shideshanxx.github.io
+   clientID: 5ae27258c9b24dd664be
+   clientSecret: 30208b22f48457523d185ad61235164a308d1e5e
+   admin: Shideshanxx
 
 # page Sidebar settings
 sidebar-about-description: "A future technique geek."
