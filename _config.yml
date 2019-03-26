@@ -46,10 +46,6 @@ github_username:    shideshanxx
 anchorjs: true                          # 修改在default.html->footer
 
 
-# 评论系统
-# comments:
-#   disqus: false
-
 #gitment
 # comment_gitment_repo: shideshanxx.github.io
 # comment_gitment_clientId: 5ae27258c9b24dd664be
