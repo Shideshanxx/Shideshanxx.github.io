@@ -2,7 +2,7 @@
 layout:     post
 title:      "MVC、MVP及MVVM"
 subtitle:   "关于这三种模式的简单认识"
-date:       2018-1-22
+date:       2018-05-26
 author:     "Deshan Shi"
 tags:       [框架]
 categories : [前端]
