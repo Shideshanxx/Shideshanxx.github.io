@@ -4,7 +4,7 @@ title:      "ES6——let和const命令"
 subtitle:   "let和const命令"
 date:       2019-05-13
 author:     "Deshan Shi"
-tags:       [Javascript，ES6]
+tags:       [Javascript,ES6]
 categories : [前端]
 header-img: "/img/post/post-bg-js-version.jpg"
 description: "let和const命令"
